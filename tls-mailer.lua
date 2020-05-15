@@ -133,7 +133,6 @@ local send = function(self, pp)
       local _b = ltn12.source.chain(
         _s,
         ltn12.filter.chain(
-          mime.normalize(),
           mime.encode("base64"),
           mime.wrap("base64")
         )
