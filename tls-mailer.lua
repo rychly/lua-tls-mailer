@@ -21,6 +21,7 @@ else
 
   socket = require "socket"
   smtp = require "socket.smtp"
+  mime = require "mime"
   ltn12 = require "ltn12"
   ssl = require "ssl"
 
